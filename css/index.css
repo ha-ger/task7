@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/pexels-photo-7130472.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  width: 100%;
+user-select: none;
+}
+.to-do-list {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  text-transform: capitalize;
+  color: #ea9c28;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.date {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.write-text,
+.show-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0px 0px 30px #2e1e0594;
+  border-radius: 18px;
+  padding: 0px 30px;
+}
+.write-text {
+  background-color: #ea9c2852;
+  height: 80px;
+  margin-bottom: 15px;
+}
+input {
+  border: none;
+  outline: none;
+  width: 80%;
+  height: 50px;
+  max-width: 100%;
+  margin-right: 20px;
+  border-radius: 6px;
+  padding-left: 18px;
+  font-size: 23px;
+  background-color: rgb(211, 205, 205);white-space: initial;
+}
+
+button {
+  font-weight: 500px;
+  height: 45px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #ff9c10;
+  background-color: #7a32e75e;
+  width: 90px;
+  max-width: 100%;
+  transition: all 0.3s ease 0s;
+  border-radius: 6px;
+  box-shadow: 1px 4px 3px 0px #5049b5;
+  -webkit-tap-highlight-color: transparent; 
+
+}
+.show-text {
+  background-color: transparent;
+  margin-top: 19px;
+  flex-direction: column;
+  box-shadow: none;
+  border-radius: 18px;
+  padding: 15px 16px;
+}
+.colored {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0px 0px 30px #2e1e0594;
+
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 16px;
+}
+
+.colored input,
+.colored button {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+.line-through {
+  text-decoration: line-through;
+  color: rgb(148, 59, 170) ;;
+  font-weight: bolder;
+  transition: all 0.3s;
+}
+ button:hover{
+    background-color:rgb(148, 59, 170) ;
+    color:white;
+}
+@media(max-width:440px){
+input{padding-left:5px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 8px;
+    width:135%;
+
+}
+
+button {
+    font-size: 16px;
+    width: 62px;
+  height: 30px;
+}
+
+.show-text {
+
+    padding: 15px 8px;
+}
+
+.write-text {
+  
+    padding: 0px 10px;
+    
+}
+
+}
